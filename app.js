@@ -7,4 +7,13 @@ const server = http.createServer((req, res) => {
 
 server.listen(3000, () => {
   console.log("Server running on port 3000");
+});const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.write("Hello from DevOps Project");
+  res.end();
+});
+
+server.listen(3000, () => {
+  console.log("Server running on port 3000");
 });
